@@ -1,0 +1,15 @@
+{
+  "domains": [
+    "evil-demo.example"
+  ],
+  "ips": [
+    "203.0.113.10"
+  ],
+  "hashes": [
+    "deadbeef00000000000000000000000000000000000000000000000000000000"
+  ],
+  "processes": [
+    "rundll32.exe",
+    "powershell.exe"
+  ]
+}
