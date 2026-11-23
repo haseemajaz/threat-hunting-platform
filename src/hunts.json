@@ -1,0 +1,7 @@
+[
+  {"id": "H01", "name": "hunt-encoded-powershell", "hypothesis": "An attacker is using encoded PowerShell on at least one host.", "field": "command", "value": "-EncodedCommand", "mitre_tactic": "Execution", "mitre_technique": "T1059.001 PowerShell"},
+  {"id": "H02", "name": "hunt-living-off-the-land", "hypothesis": "A signed Windows binary is being abused to run code.", "field": "process", "value": "rundll32.exe", "mitre_tactic": "Defense Evasion", "mitre_technique": "T1218 Signed Binary Proxy Execution"},
+  {"id": "H03", "name": "hunt-c2-beaconing", "hypothesis": "A host is beaconing to a known-bad demo domain at regular intervals.", "field": "destination", "value": "evil-demo.example", "mitre_tactic": "Command and Control", "mitre_technique": "T1071.001 Web Protocols"},
+  {"id": "H04", "name": "hunt-persistence-registry", "hypothesis": "An attacker has set a Run key for persistence.", "field": "registry_key", "value": "Run", "mitre_tactic": "Persistence", "mitre_technique": "T1547.001 Registry Run Keys"},
+  {"id": "H05", "name": "hunt-credential-dumping", "hypothesis": "LSASS memory is being accessed for credential dumping.", "field": "process", "value": "lsass", "mitre_tactic": "Credential Access", "mitre_technique": "T1003.001 LSASS Memory"}
+]
